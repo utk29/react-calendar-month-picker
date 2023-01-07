@@ -10,8 +10,7 @@ interface Props {
   placeHolder?: string;
   enableMultiSelection: boolean;
 }
-
-export const MonthPicker = (props: Props) => {
+ const MonthPicker = (props: Props) => {
   const [open, setOpen] = useState<boolean>(false);
 
   const renderMonthCard = (val: string[] | undefined) => {
@@ -62,3 +61,5 @@ export const MonthPicker = (props: Props) => {
   );
 };
 
+
+export default MonthPicker

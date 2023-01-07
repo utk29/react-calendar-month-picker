@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import {MonthPicker} from './components/monthPicker/monthPicker'
+import MonthPicker from './components/monthPicker/monthPicker'
 
 function App() {
   const [multiSelection, setMultiSelection] = useState([]);
