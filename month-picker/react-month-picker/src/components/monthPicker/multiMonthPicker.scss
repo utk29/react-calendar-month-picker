@@ -1,0 +1,97 @@
+$border: 1px solid #f9f9f9;
+
+.year-month-wrapper {
+  max-width: 300px;
+  border: $border;
+  .year-month {
+    border: $border;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.column {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 0;
+  text-align: center;
+  width: 33.33%;
+
+  .selectedMonthsHighlighter {
+    background: #2a87d0;
+    color: #fff;
+    padding: 4px 12px;
+  }
+
+  .nonSelectedMonths {
+    color: black;
+  }
+}
+
+.column-grey {
+  font-size: 16px;
+  padding: 5px 0;
+  text-align: center;
+  width: 33.33%;
+  color: grey;
+}
+
+.column:hover {
+  background-color: #ececec;
+}
+
+.column-disabled {
+  pointer-events: none;
+  @extend .column-grey;
+}
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+
+
+  .chip {
+    color: rgba(0, 0, 0, 0.87);
+    display: inline-block;
+    padding: 0 25px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+  }
+
+
+.singleAllocation {
+  padding: 15px;
+}
+
+.parentWrapper {
+  display: flex;
+  border: 1px solid lightgrey;
+  padding: 2px;
+  max-width: 300px;
+
+  .calenderInput {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    gap: 5px;
+    width: 300px;
+    max-height: 40px !important;
+  }
+
+  .calenderIcon {
+    margin: auto;
+    font-size: 20px;
+    color: #9b9b9b;
+  }
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
